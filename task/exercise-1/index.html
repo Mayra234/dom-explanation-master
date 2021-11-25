@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form id="operationsForm">
+      <label for="number1">Primer número: </label>
+      <input type="number" name="number1" id="number1" />
+      <label for="number2">Segundo número: </label>
+      <input type="number" name="number2" id="number2" />
+      <label for="symbol">Simbolo de la operación: </label>
+      <input type="text" name="symbol" id="symbolOperation" />
+      <button type="button" id="executeOperation">Ejecutar operación</button>
+    </form>
+    <span>
+      <b>Operación: </b>
+      <span id="operation"></span>
+    </span>
+    <br />
+    <span>
+      <b>Resultado: </b>
+      <span id="result"></span>
+    </span>
+  </body>
+  <script src="script.js"></script>
+</html>

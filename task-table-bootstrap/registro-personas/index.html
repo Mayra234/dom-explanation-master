@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+    <div class="card" id="principal-card">
+      <h1>REGISTRO DE PERSONAS</h1>
+      <div class="card-body">
+        <form id="peopleRegistration">
+          <div class="form-group col-md-6">
+            <label for="fullName">Nombre completo</label>
+            <input
+              type="text"
+              class="form-control"
+              name="fullName"
+              id="fullName"
+            />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="email">Email</label>
+            <input type="email" class="form-control" name="email" id="email" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="age">Edad</label>
+            <input type="number" class="form-control" name="age" id="age" />
+          </div>
+          <div class="form-group col-md-6">
+            <label for="birthDate">Fecha de nacimiento</label>
+            <input
+              type="date"
+              class="form-control"
+              name="birthDate"
+              id="birthDate"
+            />
+          </div>
+          <div class="form-group col-md-4" id="select-type-document">
+            <label for="typeDocument">Tipo de documento</label>
+            <select id="typeDocument" class="form-control">
+              <option selected>Seleccionar...</option>
+              <option value="Cédula de ciudadanía">Cédula de ciudadanía</option>
+              <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+              <option value="Registro civil">Registro civil</option>
+            </select>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="numberDocument">Número del documento</label>
+            <input
+              type="number"
+              class="form-control"
+              name="numberDocument"
+              id="numberDocument"
+            />
+          </div>
+          <div class="form-group col-md-4" id="select-marital-status">
+            <label for="maritalStatus">Estado civil</label>
+            <select id="maritalStatus" class="form-control">
+              <option selected>Seleccionar...</option>
+              <option value="Soltero">Soltero</option>
+              <option value="Casado">Casado</option>
+              <option value="Unión libre">Unión libre</option>
+            </select>
+          </div>
+          <br />
+          <button type="button" class="btn btn-primary" id="add">
+            Registrar
+          </button>
+        </form>
+      </div>
+      <table class="table">
+        <thead class="thead-light">
+          <tr>
+            <th scope="col">Nombre completo</th>
+            <th scope="col">Email</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Fecha de nacimiento</th>
+            <th scope="col">Tipo de documento</th>
+            <th scope="col">Número del documento</th>
+            <th scope="col">Estado civil</th>
+          </tr>
+        </thead>
+        <tbody id="contentTablePeoples"></tbody>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

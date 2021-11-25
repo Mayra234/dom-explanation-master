@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+  </head>
+  <body>
+    <form id="personForm">
+      <label for="firstName">Primer Nombre: </label>
+      <input type="text" name="firstName" id="firstName" />
+      <label for="secondName">Segundo Nombre: </label>
+      <input type="text" name="secondName" id="secondName" />
+      <label for="lastName">Apellidos: </label>
+      <input type="text" name="lastName" id="lastName" />
+      <label for="documentType">Tipo de documento: </label>
+      <select name="documentType" id="documentType">
+        <option>Seleccionar...</option>
+        <option value="Cédula de ciudadanía" id="citizenshipCard">
+          Cédula de ciudadanía
+        </option>
+        <option value="Tarjeta de identidad" id="identityCard">
+          Tarjeta de identidad
+        </option>
+        <option value="Pasaporte" id="pastport">Pasaporte</option>
+        <option value="Cédula de extranjería" id="foreignerId">
+          Cédula de extranjería
+        </option>
+        <option value="Registro civil" id="civilRegistration">
+          Registro civil
+        </option>
+      </select>
+      <label for="documentNumber">Número de documento: </label>
+      <input type="number" name="documentNumber" id="documentNumber" />
+      <label for="email">Correo: </label>
+      <input type="email" name="email" id="email" />
+      <label for="cellphone">Celular: </label>
+      <input type="text" name="cellphone" id="cellphone" />
+      <label for="birthDate">Fecha de nacimiento: </label>
+      <input type="date" name="birthDate" id="birthDate" />
+      <label for="birthCountry">País de nacimiento: </label>
+      <input type="text" name="birthCountry" id="birthCountry" />
+      <label for="stateCivil">Estado civil: </label>
+      <select name="stateCivil" id="stateCivil">
+        <option>Seleccionar...</option>
+        <option value="Soltero">Soltero</option>
+        <option value="Casado">Casado</option>
+        <option value="Unión libre">Unión libre</option>
+      </select>
+      <button id="checkIn">Registarse</button>
+    </form>
+
+    <ul id="dataPerson"></ul>
+  </body>
+  <script src="script.js"></script>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="card" id="card-students">
+      <h1>PROMEDIO DE ALUMNOS</h1>
+      <div class="card-body">
+        <form id="averageStudents">
+          <div class="input-group-prepend">
+            <label class="input-group-text" id="head-subjects">Materias</label>
+          </div>
+          <select
+            class="form-select"
+            id="selectSubjects"
+            aria-label="Default select example"
+          >
+            <option selected>Seleccionar...</option>
+            <option value="Matemáticas">Matemáticas</option>
+            <option value="Lengua Castellana">Lengua Castellana</option>
+            <option value="Ciencias Sociales">Ciencias Sociales</option>
+            <option value="Ciencias Naturales">Ciencias Naturales</option>
+            <option value="Educación Física">Educación Física</option>
+            <option value="Tecnología">Tecnología</option>
+            <option value="Artes">Artes</option>
+            <option value="Ética">Ética</option>
+            <option value="Inglés">Inglés</option>
+          </select>
+          <br />
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text"> Nota de la materia </span>
+            </div>
+            <input
+              type="text"
+              class="form-control"
+              name="subjectNote"
+              id="subjectNote"
+            />
+          </div>
+          <br />
+          <button type="button" class="btn btn-success" id="accept">
+            Cargar
+          </button>
+        </form>
+      </div>
+      <table class="table table-dark" id="tableStore">
+        <thead>
+          <tr>
+            <th scope="col">Materias</th>
+            <th scope="col">Notas</th>
+          </tr>
+        </thead>
+        <tbody id="tableSubjects"></tbody>
+        <tfoot class="thead-dark">
+          <tr>
+            <th>Promedio</th>
+            <th>Suma notas</th>
+          </tr>
+          <tr>
+            <td id="averageSubjects"></td>
+            <td id="sumNote"></td>
+          </tr>
+        </tfoot>
+      </table>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

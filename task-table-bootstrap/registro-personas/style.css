@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  height: 100%;
+}
+body {
+  background: cadetblue;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#principal-card {
+  background: #2ed97b;
+}
+h1 {
+  text-align: center;
+  padding: 10px;
+}
+#peopleRegistration {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#select-type-document {
+  width: 50%;
+}
+#select-marital-status {
+  width: 50%;
+}
