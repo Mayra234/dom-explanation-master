@@ -5,13 +5,7 @@ const productQuantity = document.getElementById('product-quantity');
 const addProduct = document.getElementById('add-product');
 const listProducts = document.getElementById('list-products');
 
-let products = [
-  {
-    name: 'Pan',
-    description: 'Pan aliñado con queso y bocadillo',
-    quantity: 5,
-  },
-];
+let products = [];
 
 productInput.addEventListener('keyup', function () {
   validate();
